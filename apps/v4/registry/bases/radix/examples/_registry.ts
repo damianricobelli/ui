@@ -525,6 +525,18 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "phone-field-example",
+    title: "Phone Field",
+    type: "registry:example",
+    registryDependencies: ["field", "phone-field", "example"],
+    files: [
+      {
+        path: "examples/phone-field-example.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "popover-example",
     title: "Popover",
     type: "registry:example",

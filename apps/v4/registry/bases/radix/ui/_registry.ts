@@ -587,6 +587,26 @@ export const ui: Registry["items"] = [
     },
   },
   {
+    name: "phone-field",
+    type: "registry:ui",
+    dependencies: ["phonefield@^2.3.0"],
+    registryDependencies: ["input-group"],
+    files: [
+      {
+        path: "ui/phone-field.tsx",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://ui.shadcn.com/docs/components/radix/phone-field",
+        examples:
+          "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/phone-field-example.tsx",
+        api: "https://phonefield.vercel.app",
+      },
+    },
+  },
+  {
     name: "popover",
     type: "registry:ui",
     files: [

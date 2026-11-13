@@ -727,6 +727,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "registry/bases/base/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/base/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -2082,6 +2105,22 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/base/examples/pagination-example.tsx",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "phone-field-example": {
+      name: "phone-field-example",
+      title: "Phone Field",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "phone-field", "example"],
+      files: [
+        {
+          path: "registry/bases/base/examples/phone-field-example.tsx",
           type: "registry:example",
           target: "",
         },
@@ -4549,6 +4588,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "input-group"],
+      files: [
+        {
+          path: "registry/bases/aria/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -5880,6 +5942,22 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/aria/examples/pagination-example.tsx",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "phone-field-example": {
+      name: "phone-field-example",
+      title: "Phone Field",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "phone-field", "example"],
+      files: [
+        {
+          path: "registry/bases/aria/examples/phone-field-example.tsx",
           type: "registry:example",
           target: "",
         },
@@ -8374,6 +8452,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "registry/bases/radix/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/radix/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -9706,6 +9807,22 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/radix/examples/pagination-example.tsx",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "phone-field-example": {
+      name: "phone-field-example",
+      title: "Phone Field",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "phone-field", "example"],
+      files: [
+        {
+          path: "registry/bases/radix/examples/phone-field-example.tsx",
           type: "registry:example",
           target: "",
         },

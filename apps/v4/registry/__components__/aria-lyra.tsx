@@ -246,6 +246,14 @@ export const Components: Record<string, any> = {
       ) || "pagination"
     return { default: mod.default || mod[exportName] }
   }),
+  "phone-field": React.lazy(async () => {
+    const mod = await import("@/styles/aria-lyra/ui/phone-field")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field"
+    return { default: mod.default || mod[exportName] }
+  }),
   popover: React.lazy(async () => {
     const mod = await import("@/styles/aria-lyra/ui/popover")
     const exportName =

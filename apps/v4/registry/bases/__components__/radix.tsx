@@ -262,6 +262,14 @@ export const Components: Record<string, any> = {
       ) || "pagination"
     return { default: mod.default || mod[exportName] }
   }),
+  "phone-field": React.lazy(async () => {
+    const mod = await import("@/registry/bases/radix/ui/phone-field")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field"
+    return { default: mod.default || mod[exportName] }
+  }),
   popover: React.lazy(async () => {
     const mod = await import("@/registry/bases/radix/ui/popover")
     const exportName =
@@ -808,6 +816,16 @@ export const Components: Record<string, any> = {
       Object.keys(mod).find(
         (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
       ) || "pagination-example"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-example": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/bases/radix/examples/phone-field-example"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-example"
     return { default: mod.default || mod[exportName] }
   }),
   "popover-example": React.lazy(async () => {

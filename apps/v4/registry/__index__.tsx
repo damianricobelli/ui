@@ -7672,6 +7672,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/base-nova/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/base/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -9094,6 +9117,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/radix-nova/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/radix/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -10447,6 +10493,29 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://ui.shadcn.com/docs/components/aria/pagination",
           examples:
             "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/pagination-example.tsx",
+        },
+      },
+    },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "input-group"],
+      files: [
+        {
+          path: "styles/aria-nova/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
         },
       },
     },
@@ -11879,6 +11948,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/base-vega/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/base/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -13297,6 +13389,29 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://ui.shadcn.com/docs/components/base/pagination",
           examples:
             "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/pagination-example.tsx",
+        },
+      },
+    },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/base-maia/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/base/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
         },
       },
     },
@@ -14721,6 +14836,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/base-lyra/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/base/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -16139,6 +16277,29 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://ui.shadcn.com/docs/components/base/pagination",
           examples:
             "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/pagination-example.tsx",
+        },
+      },
+    },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/base-mira/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/base/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
         },
       },
     },
@@ -17563,6 +17724,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/base-luma/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/base/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -18981,6 +19165,29 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://ui.shadcn.com/docs/components/base/pagination",
           examples:
             "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/pagination-example.tsx",
+        },
+      },
+    },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/base-sera/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/base/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
         },
       },
     },
@@ -20405,6 +20612,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/base-rhea/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/base/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/base/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -21781,6 +22011,29 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://ui.shadcn.com/docs/components/aria/pagination",
           examples:
             "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/pagination-example.tsx",
+        },
+      },
+    },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "input-group"],
+      files: [
+        {
+          path: "styles/aria-vega/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
         },
       },
     },
@@ -23171,6 +23424,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "input-group"],
+      files: [
+        {
+          path: "styles/aria-maia/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -24555,6 +24831,29 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://ui.shadcn.com/docs/components/aria/pagination",
           examples:
             "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/pagination-example.tsx",
+        },
+      },
+    },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "input-group"],
+      files: [
+        {
+          path: "styles/aria-lyra/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
         },
       },
     },
@@ -25945,6 +26244,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "input-group"],
+      files: [
+        {
+          path: "styles/aria-mira/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -27329,6 +27651,29 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://ui.shadcn.com/docs/components/aria/pagination",
           examples:
             "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/pagination-example.tsx",
+        },
+      },
+    },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "input-group"],
+      files: [
+        {
+          path: "styles/aria-luma/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
         },
       },
     },
@@ -28719,6 +29064,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "input-group"],
+      files: [
+        {
+          path: "styles/aria-sera/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -30103,6 +30471,29 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://ui.shadcn.com/docs/components/aria/pagination",
           examples:
             "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/pagination-example.tsx",
+        },
+      },
+    },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button", "input-group"],
+      files: [
+        {
+          path: "styles/aria-rhea/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/aria/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/aria/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
         },
       },
     },
@@ -31536,6 +31927,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/radix-vega/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/radix/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -32932,6 +33346,29 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://ui.shadcn.com/docs/components/radix/pagination",
           examples:
             "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/pagination-example.tsx",
+        },
+      },
+    },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/radix-maia/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/radix/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
         },
       },
     },
@@ -34334,6 +34771,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/radix-lyra/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/radix/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -35730,6 +36190,29 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://ui.shadcn.com/docs/components/radix/pagination",
           examples:
             "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/pagination-example.tsx",
+        },
+      },
+    },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/radix-mira/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/radix/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
         },
       },
     },
@@ -37132,6 +37615,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/radix-luma/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/radix/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -38531,6 +39037,29 @@ export const Index: Record<string, Record<string, any>> = {
         },
       },
     },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/radix-sera/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/radix/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
+        },
+      },
+    },
     popover: {
       name: "popover",
       title: "undefined",
@@ -39927,6 +40456,29 @@ export const Index: Record<string, Record<string, any>> = {
           docs: "https://ui.shadcn.com/docs/components/radix/pagination",
           examples:
             "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/pagination-example.tsx",
+        },
+      },
+    },
+    "phone-field": {
+      name: "phone-field",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input-group"],
+      files: [
+        {
+          path: "styles/radix-rhea/ui/phone-field.tsx",
+          type: "registry:ui",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: {
+        links: {
+          docs: "https://ui.shadcn.com/docs/components/radix/phone-field",
+          examples:
+            "https://ui.shadcn.com/code/apps/v4/registry/bases/radix/examples/phone-field-example.tsx",
+          api: "https://phonefield.vercel.app",
         },
       },
     },

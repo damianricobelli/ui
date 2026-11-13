@@ -1,4 +1,7 @@
 export const PAGES_NEW = [
+  "/docs/components/radix/phone-field",
+  "/docs/components/base/phone-field",
+  "/docs/components/aria/phone-field",
   "/docs/components/radix/trace",
   "/docs/components/base/trace",
   "/docs/components/aria/trace",

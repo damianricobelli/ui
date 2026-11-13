@@ -44,6 +44,7 @@ export const UI_COMPONENTS = [
   "native-select",
   "navigation-menu",
   "pagination",
+  "phone-field",
   "popover",
   "progress",
   "questionnaire",

@@ -1529,6 +1529,62 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       name: "pagination-simple",
       filePath: "examples/base/pagination-simple.tsx",
     },
+    "phone-field-controlled": {
+      name: "phone-field-controlled",
+      filePath: "examples/base/phone-field-controlled.tsx",
+    },
+    "phone-field-countries": {
+      name: "phone-field-countries",
+      filePath: "examples/base/phone-field-countries.tsx",
+    },
+    "phone-field-custom-parts": {
+      name: "phone-field-custom-parts",
+      filePath: "examples/base/phone-field-custom-parts.tsx",
+    },
+    "phone-field-default-country": {
+      name: "phone-field-default-country",
+      filePath: "examples/base/phone-field-default-country.tsx",
+    },
+    "phone-field-demo": {
+      name: "phone-field-demo",
+      filePath: "examples/base/phone-field-demo.tsx",
+    },
+    "phone-field-disabled": {
+      name: "phone-field-disabled",
+      filePath: "examples/base/phone-field-disabled.tsx",
+    },
+    "phone-field-form-formisch": {
+      name: "phone-field-form-formisch",
+      filePath: "examples/base/phone-field-form-formisch.tsx",
+    },
+    "phone-field-form-rhf": {
+      name: "phone-field-form-rhf",
+      filePath: "examples/base/phone-field-form-rhf.tsx",
+    },
+    "phone-field-form-tanstack": {
+      name: "phone-field-form-tanstack",
+      filePath: "examples/base/phone-field-form-tanstack.tsx",
+    },
+    "phone-field-format": {
+      name: "phone-field-format",
+      filePath: "examples/base/phone-field-format.tsx",
+    },
+    "phone-field-invalid": {
+      name: "phone-field-invalid",
+      filePath: "examples/base/phone-field-invalid.tsx",
+    },
+    "phone-field-localization": {
+      name: "phone-field-localization",
+      filePath: "examples/base/phone-field-localization.tsx",
+    },
+    "phone-field-preferred-countries": {
+      name: "phone-field-preferred-countries",
+      filePath: "examples/base/phone-field-preferred-countries.tsx",
+    },
+    "phone-field-validation": {
+      name: "phone-field-validation",
+      filePath: "examples/base/phone-field-validation.tsx",
+    },
     "plan-basic": {
       name: "plan-basic",
       filePath: "examples/base/plan-basic.tsx",
@@ -3870,6 +3926,62 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
     "pagination-simple": {
       name: "pagination-simple",
       filePath: "examples/aria/pagination-simple.tsx",
+    },
+    "phone-field-controlled": {
+      name: "phone-field-controlled",
+      filePath: "examples/aria/phone-field-controlled.tsx",
+    },
+    "phone-field-countries": {
+      name: "phone-field-countries",
+      filePath: "examples/aria/phone-field-countries.tsx",
+    },
+    "phone-field-custom-parts": {
+      name: "phone-field-custom-parts",
+      filePath: "examples/aria/phone-field-custom-parts.tsx",
+    },
+    "phone-field-default-country": {
+      name: "phone-field-default-country",
+      filePath: "examples/aria/phone-field-default-country.tsx",
+    },
+    "phone-field-demo": {
+      name: "phone-field-demo",
+      filePath: "examples/aria/phone-field-demo.tsx",
+    },
+    "phone-field-disabled": {
+      name: "phone-field-disabled",
+      filePath: "examples/aria/phone-field-disabled.tsx",
+    },
+    "phone-field-form-formisch": {
+      name: "phone-field-form-formisch",
+      filePath: "examples/aria/phone-field-form-formisch.tsx",
+    },
+    "phone-field-form-rhf": {
+      name: "phone-field-form-rhf",
+      filePath: "examples/aria/phone-field-form-rhf.tsx",
+    },
+    "phone-field-form-tanstack": {
+      name: "phone-field-form-tanstack",
+      filePath: "examples/aria/phone-field-form-tanstack.tsx",
+    },
+    "phone-field-format": {
+      name: "phone-field-format",
+      filePath: "examples/aria/phone-field-format.tsx",
+    },
+    "phone-field-invalid": {
+      name: "phone-field-invalid",
+      filePath: "examples/aria/phone-field-invalid.tsx",
+    },
+    "phone-field-localization": {
+      name: "phone-field-localization",
+      filePath: "examples/aria/phone-field-localization.tsx",
+    },
+    "phone-field-preferred-countries": {
+      name: "phone-field-preferred-countries",
+      filePath: "examples/aria/phone-field-preferred-countries.tsx",
+    },
+    "phone-field-validation": {
+      name: "phone-field-validation",
+      filePath: "examples/aria/phone-field-validation.tsx",
     },
     "plan-basic": {
       name: "plan-basic",
@@ -6236,6 +6348,62 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
     "pagination-simple": {
       name: "pagination-simple",
       filePath: "examples/radix/pagination-simple.tsx",
+    },
+    "phone-field-controlled": {
+      name: "phone-field-controlled",
+      filePath: "examples/radix/phone-field-controlled.tsx",
+    },
+    "phone-field-countries": {
+      name: "phone-field-countries",
+      filePath: "examples/radix/phone-field-countries.tsx",
+    },
+    "phone-field-custom-parts": {
+      name: "phone-field-custom-parts",
+      filePath: "examples/radix/phone-field-custom-parts.tsx",
+    },
+    "phone-field-default-country": {
+      name: "phone-field-default-country",
+      filePath: "examples/radix/phone-field-default-country.tsx",
+    },
+    "phone-field-demo": {
+      name: "phone-field-demo",
+      filePath: "examples/radix/phone-field-demo.tsx",
+    },
+    "phone-field-disabled": {
+      name: "phone-field-disabled",
+      filePath: "examples/radix/phone-field-disabled.tsx",
+    },
+    "phone-field-form-formisch": {
+      name: "phone-field-form-formisch",
+      filePath: "examples/radix/phone-field-form-formisch.tsx",
+    },
+    "phone-field-form-rhf": {
+      name: "phone-field-form-rhf",
+      filePath: "examples/radix/phone-field-form-rhf.tsx",
+    },
+    "phone-field-form-tanstack": {
+      name: "phone-field-form-tanstack",
+      filePath: "examples/radix/phone-field-form-tanstack.tsx",
+    },
+    "phone-field-format": {
+      name: "phone-field-format",
+      filePath: "examples/radix/phone-field-format.tsx",
+    },
+    "phone-field-invalid": {
+      name: "phone-field-invalid",
+      filePath: "examples/radix/phone-field-invalid.tsx",
+    },
+    "phone-field-localization": {
+      name: "phone-field-localization",
+      filePath: "examples/radix/phone-field-localization.tsx",
+    },
+    "phone-field-preferred-countries": {
+      name: "phone-field-preferred-countries",
+      filePath: "examples/radix/phone-field-preferred-countries.tsx",
+    },
+    "phone-field-validation": {
+      name: "phone-field-validation",
+      filePath: "examples/radix/phone-field-validation.tsx",
     },
     "plan-demo": {
       name: "plan-demo",

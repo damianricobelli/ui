@@ -1,0 +1,369 @@
+---
+title: Phone Field
+description: A phone number input with a searchable country picker that formats and validates as you type.
+base: base
+component: true
+links:
+  doc: https://phonefield.vercel.app
+---
+
+<ComponentPreview styleName="base-nova" name="phone-field-demo" />
+
+## About
+
+Phone Field is built on top of [phonefield](https://phonefield.vercel.app), which uses [libphonenumber-js](https://github.com/catamphetamine/libphonenumber-js) for formatting and validation.
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add phone-field
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install phonefield @base-ui/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource
+  name="phone-field"
+  title="components/ui/phone-field.tsx"
+  styleName="base-nova"
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx showLineNumbers
+import {
+  PhoneField,
+  PhoneFieldCountry,
+  PhoneFieldInput,
+} from "@/components/ui/phone-field"
+```
+
+```tsx showLineNumbers
+<PhoneField defaultCountry="US">
+  <PhoneFieldCountry />
+  <PhoneFieldInput aria-label="Phone number" />
+</PhoneField>
+```
+
+## Composition
+
+Use the following composition to build a `PhoneField`:
+
+```text
+PhoneField
+├── PhoneFieldCountry
+└── PhoneFieldInput
+```
+
+`PhoneField` owns the value and renders the field shell. `PhoneFieldCountry` renders the country picker and `PhoneFieldInput` renders the number input.
+
+## Default Country
+
+Use the `defaultCountry` prop to set the initial country. It defaults to `"US"`, or to the first available country when `"US"` is not available.
+
+<ComponentPreview styleName="base-nova" name="phone-field-default-country" />
+
+The `placeholder` prop on `PhoneFieldInput` accepts a function of the selected country. Use it with `getExampleNumber` from `phonefield/utils` to show an example number for each country.
+
+```tsx showLineNumbers {1,6}
+import { getExampleNumber } from "phonefield/utils"
+
+;<PhoneField defaultCountry="GB">
+  <PhoneFieldCountry />
+  <PhoneFieldInput placeholder={(country) => getExampleNumber(country.iso2)} />
+</PhoneField>
+```
+
+## Countries
+
+Use the `countries` prop to restrict the picker to a list of countries, in the given order. Pasted international numbers from other countries are kept as invalid text.
+
+<ComponentPreview styleName="base-nova" name="phone-field-countries" />
+
+## Preferred Countries
+
+Use the `preferredCountries` prop to pin countries to the top of the picker.
+
+<ComponentPreview
+  styleName="base-nova"
+  name="phone-field-preferred-countries"
+/>
+
+## Disabled
+
+Use the `disabled` prop to disable the field.
+
+<ComponentPreview styleName="base-nova" name="phone-field-disabled" />
+
+## Invalid
+
+Use the `invalid` prop to mark the field as invalid, for example for a server error. Add `data-invalid` to the `Field` component to style the label.
+
+<ComponentPreview styleName="base-nova" name="phone-field-invalid" />
+
+## Formatting
+
+The number is formatted as you type. Set `formatOnType` to `false` to keep the digits as typed.
+
+<ComponentPreview styleName="base-nova" name="phone-field-format" />
+
+- Pasting an international number, such as `+44 20 7946 0018`, selects the matching country.
+- Digits beyond the longest possible number for the selected country are blocked. Set `limitMaxLength` to `false` to allow them.
+- `Cmd/Ctrl+Z` and `Cmd/Ctrl+Shift+Z` undo and redo number and country changes.
+
+## Validation
+
+`onValueChange` receives a `PhoneField.Value` with an `isValid` flag and the number in E.164 format.
+
+By default, the field marks itself invalid once it is touched and the number is incomplete or invalid, or empty and `required`. Set `autoInvalid` to `false` to control the invalid state yourself with the `invalid` prop. The `onBlur` callback on `PhoneField` runs when focus leaves the whole field, including the country picker.
+
+<ComponentPreview styleName="base-nova" name="phone-field-validation" />
+
+## Controlled
+
+Use the `value` and `onValueChange` props to control the field. `value` accepts `{ countryIso2, nationalNumber }` or a full `PhoneField.Value`.
+
+<ComponentPreview styleName="base-nova" name="phone-field-controlled" />
+
+## Localization
+
+Use the `lang` prop to localize country names and search, and the `labels` prop on `PhoneFieldCountry` to translate the picker copy.
+
+<ComponentPreview styleName="base-nova" name="phone-field-localization" />
+
+## Custom Parts
+
+Use `usePhoneField` from `phonefield` to build your own parts. Render them inside `PhoneField`, next to `PhoneFieldCountry` and `PhoneFieldInput`. The children of `PhoneField` render inside the input group, so wrap visible parts in `InputGroupAddon`.
+
+<ComponentPreview styleName="base-nova" name="phone-field-custom-parts" />
+
+```tsx showLineNumbers {1,4}
+import { usePhoneField } from "phonefield"
+
+function PhoneFieldValidIcon() {
+  const { state } = usePhoneField()
+
+  if (!state.valid) {
+    return null
+  }
+
+  return (
+    <InputGroupAddon align="inline-end">
+      <CheckIcon />
+    </InputGroupAddon>
+  )
+}
+
+;<PhoneField defaultCountry="US">
+  <PhoneFieldCountry />
+  <PhoneFieldInput aria-label="Phone number" />
+  <PhoneFieldValidIcon />
+</PhoneField>
+```
+
+See [usePhoneField](#usephonefield) for everything the hook returns.
+
+## Form
+
+Keep the value in the form library and validate it with `isValid` from `phonefield/utils`. Pass the error to `PhoneField` with the `invalid` prop and set `autoInvalid` to `false`, so the form library owns validation.
+
+### React Hook Form
+
+- Pass `field.value`, `field.onChange`, and `field.onBlur` to `PhoneField`.
+- Pass `field.ref` to `PhoneFieldInput` so the form can focus the field on a failed submit.
+
+<ComponentPreview
+  styleName="base-nova"
+  name="phone-field-form-rhf"
+  previewClassName="h-[32rem]"
+/>
+
+```tsx showLineNumbers title="form.tsx" {8-13,16}
+<Controller
+  name="phone"
+  control={form.control}
+  render={({ field, fieldState }) => (
+    <Field data-invalid={fieldState.invalid}>
+      <FieldLabel htmlFor="phone">Phone number</FieldLabel>
+      <PhoneField
+        name={field.name}
+        value={field.value}
+        onValueChange={field.onChange}
+        onBlur={field.onBlur}
+        invalid={fieldState.invalid}
+        autoInvalid={false}
+      >
+        <PhoneFieldCountry />
+        <PhoneFieldInput ref={field.ref} id="phone" />
+      </PhoneField>
+      {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
+    </Field>
+  )}
+/>
+```
+
+### TanStack Form
+
+- Pass `field.state.value`, `field.handleChange`, and `field.handleBlur` to `PhoneField`.
+
+<ComponentPreview
+  styleName="base-nova"
+  name="phone-field-form-tanstack"
+  previewClassName="h-[32rem]"
+/>
+
+### Formisch
+
+- Pass `field.input` and `field.onChange` to `PhoneField`, and `field.props.ref` to `PhoneFieldInput`.
+
+<ComponentPreview
+  styleName="base-nova"
+  name="phone-field-form-formisch"
+  previewClassName="h-[32rem]"
+/>
+
+### Server
+
+When `PhoneField` has a `name`, it submits one `FormData` entry. Use `fromFormData` from `phonefield/utils` to read and validate it on the server.
+
+```ts showLineNumbers
+import { fromFormData } from "phonefield/utils"
+
+const phone = fromFormData(formData, "phone") // PhoneField.Value | null
+```
+
+## Accessibility
+
+- Give `PhoneFieldInput` an accessible name with `FieldLabel` and a matching `id`, or with `aria-label`.
+- The country trigger is labeled with the selected country, for example `United States (+1)`.
+- Open the country picker with the trigger, type to filter, use the arrow keys to move through countries, and press `Enter` to select.
+- Picking a country moves focus to `PhoneFieldInput`, with the caret after the digits already typed. Closing the picker with `Escape` returns focus to the trigger. Set `focusInputOnSelect` to `false` on `PhoneFieldCountry` to keep focus on the trigger after picking a country.
+- `PhoneFieldInput` gets `aria-invalid` while the field is invalid.
+
+## API Reference
+
+### PhoneField
+
+The root component. It owns the value and renders the field shell.
+
+| Prop                 | Type                                                                              | Default                                |
+| -------------------- | --------------------------------------------------------------------------------- | -------------------------------------- |
+| `value`              | `PhoneField.InputValue \| PhoneField.Value`                                       | -                                      |
+| `defaultValue`       | `PhoneField.InputValue \| PhoneField.Value`                                       | -                                      |
+| `onValueChange`      | `(value: PhoneField.Value, details: { reason: PhoneField.ChangeReason }) => void` | -                                      |
+| `defaultCountry`     | `PhoneField.CountryCode`                                                          | `"US"`, or the first available country |
+| `countries`          | `readonly PhoneField.CountryCode[]`                                               | All countries                          |
+| `preferredCountries` | `readonly PhoneField.CountryCode[]`                                               | -                                      |
+| `lang`               | `string \| readonly string[]`                                                     | `"en"`                                 |
+| `name`               | `string`                                                                          | -                                      |
+| `form`               | `string`                                                                          | -                                      |
+| `formatOnType`       | `boolean`                                                                         | `true`                                 |
+| `limitMaxLength`     | `boolean`                                                                         | `true`                                 |
+| `disabled`           | `boolean`                                                                         | `false`                                |
+| `readOnly`           | `boolean`                                                                         | `false`                                |
+| `required`           | `boolean`                                                                         | `false`                                |
+| `invalid`            | `boolean`                                                                         | `false`                                |
+| `autoInvalid`        | `boolean`                                                                         | `true`                                 |
+| `onFocus`            | `React.FocusEventHandler<HTMLDivElement>`                                         | -                                      |
+| `onBlur`             | `React.FocusEventHandler<HTMLDivElement>`                                         | -                                      |
+
+`PhoneField.ChangeReason` is `"input" | "paste" | "country" | "undo" | "redo"`. `onFocus` runs when focus enters the field and `onBlur` when it leaves it. `PhoneField` also accepts the props of a `div`.
+
+### PhoneFieldCountry
+
+Renders the country picker.
+
+| Prop                 | Type                                           | Default                                                     |
+| -------------------- | ---------------------------------------------- | ----------------------------------------------------------- |
+| `labels`             | `{ search?: string; empty?: React.ReactNode }` | `{ search: "Search country", empty: "No countries found" }` |
+| `focusInputOnSelect` | `boolean`                                      | `true`                                                      |
+
+Other props are forwarded to the Base UI [Combobox](https://base-ui.com/react/components/combobox) root. The selected country is managed by `PhoneField`.
+
+### PhoneFieldInput
+
+Renders the number input. `value`, `defaultValue`, and `name` are managed by `PhoneField`.
+
+| Prop           | Type                                                               | Default          |
+| -------------- | ------------------------------------------------------------------ | ---------------- |
+| `placeholder`  | `string \| ((country: PhoneField.Country) => string \| undefined)` | -                |
+| `type`         | `React.HTMLInputTypeAttribute`                                     | `"tel"`          |
+| `inputMode`    | `React.HTMLAttributes<HTMLInputElement>["inputMode"]`              | `"tel"`          |
+| `autoComplete` | `React.HTMLInputAutoCompleteAttribute`                             | `"tel-national"` |
+| `ref`          | `React.Ref<HTMLInputElement>`                                      | -                |
+
+`PhoneFieldInput` also accepts the props of an `input`.
+
+### PhoneField.Value
+
+The value passed to `onValueChange`.
+
+| Field             | Type                     | Description                                                |
+| ----------------- | ------------------------ | ---------------------------------------------------------- |
+| `countryIso2`     | `PhoneField.CountryCode` | The selected country, for example `"US"`.                  |
+| `countryDialCode` | `string`                 | The dial code of the selected country, for example `"+1"`. |
+| `nationalNumber`  | `string`                 | The number as displayed in the input.                      |
+| `e164`            | `string \| null`         | The number in E.164 format, for example `"+12015550123"`.  |
+| `isValid`         | `boolean`                | Whether the number is valid for the selected country.      |
+
+`PhoneField.InputValue` is `{ countryIso2, nationalNumber }`. Import the types with `import type { PhoneField } from "phonefield"`.
+
+### usePhoneField
+
+Reads and updates the nearest `PhoneField`. Import it from `phonefield` and call it in a component rendered inside `PhoneField`.
+
+| Property     | Type                            | Description                                                                                                                      |
+| ------------ | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `value`      | `PhoneField.Value`              | The current value.                                                                                                               |
+| `state`      | `PhoneField.State`              | The field state: `country`, `valid`, `invalid`, `filled`, `dirty`, `touched`, `focused`, `disabled`, `readOnly`, and `required`. |
+| `country`    | `PhoneField.Country`            | The selected country, with `iso2`, `name`, `dialCode`, and `flag`.                                                               |
+| `countries`  | `readonly PhoneField.Country[]` | The countries available in the picker.                                                                                           |
+| `setCountry` | `(iso2: string) => void`        | Selects a country by ISO2 code. Unknown or unavailable codes are ignored.                                                        |
+| `setNumber`  | `(number: string) => void`      | Replaces the number as if the user typed it. Accepts national or `+` international text.                                         |
+| `focusInput` | `() => boolean`                 | Focuses `PhoneFieldInput` with the caret at the end. Returns `false` when no enabled input is mounted.                           |
+
+### Utilities
+
+`phonefield/utils` works on the client and the server.
+
+| Function                                            | Description                                                                                                                      |
+| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `parse(value, options?)`                            | Parses a string, a `PhoneField.Value`, or a `PhoneField.InputValue`. Returns a `libphonenumber-js` `PhoneNumber` or `undefined`. |
+| `isValid(value, options?)`                          | Whether the number is valid for its country. Accepts the same values as `parse` and always revalidates.                          |
+| `buildValue(country, nationalNumber, formatOnType)` | Builds a `PhoneField.Value` from a country and a national or international number.                                               |
+| `fromFormData(formData, name)`                      | Validates the fields a `PhoneField` with `name` submitted and rebuilds the value. Returns `null` when there is no value.         |
+| `toFormValue(value)`                                | Returns the fields `PhoneField` submits in `FormData`: `{ countryIso2, nationalNumber }`.                                        |
+| `getCountries(lang?)`                               | Returns the countries keyed by ISO2 code, with names in the given locale.                                                        |
+| `countries`                                         | The countries keyed by ISO2 code, with English names.                                                                            |
+| `getExampleNumber(country, format?)`                | Returns an example number for a country, formatted as `"national"` (default) or `"international"`.                               |
+
+### phonefield
+
+The behavior comes from the `phonefield` package. `PhoneField`, `PhoneFieldCountry`, and `PhoneFieldInput` wrap its `PhoneField.Root`, `PhoneField.Country`, and `PhoneField.Input` parts. See the [phonefield documentation](https://phonefield.vercel.app) for more information.

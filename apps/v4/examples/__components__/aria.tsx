@@ -2962,6 +2962,118 @@ export const Components: Record<string, any> = {
       ) || "pagination-simple"
     return { default: mod.default || mod[exportName] }
   }),
+  "phone-field-controlled": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-controlled")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-controlled"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-countries": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-countries")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-countries"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-custom-parts": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-custom-parts")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-custom-parts"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-default-country": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-default-country")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-default-country"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-demo": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-demo")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-demo"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-disabled": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-disabled")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-disabled"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-form-formisch": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-form-formisch")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-form-formisch"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-form-rhf": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-form-rhf")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-form-rhf"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-form-tanstack": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-form-tanstack")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-form-tanstack"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-format": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-format")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-format"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-invalid": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-invalid")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-invalid"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-localization": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-localization")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-localization"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-preferred-countries": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-preferred-countries")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-preferred-countries"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "phone-field-validation": React.lazy(async () => {
+    const mod = await import("@/examples/aria/phone-field-validation")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "phone-field-validation"
+    return { default: mod.default || mod[exportName] }
+  }),
   "plan-basic": React.lazy(async () => {
     const mod = await import("@/examples/aria/plan-basic")
     const exportName =
